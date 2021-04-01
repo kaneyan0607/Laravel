@@ -21,6 +21,13 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
 - DB 接続
   　.env を編集する。
   socket 情報も入力しておく(mamp のトップ画面にパスの記載あり)
+  DB_CONNECTION=mysql
+  DB_HOST=127.0.0.1
+  DB_PORT=8889
+  DB_DATABASE=fuku-blog
+  DB_USERNAME=root
+  DB_PASSWORD=root
+  DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock
 
 - 文字化け防止
   　 app/Providers/AppServiceProvider.php
