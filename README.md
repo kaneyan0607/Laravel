@@ -1,1 +1,42 @@
 # Laravel
+
+チュートリアル
+https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIAdOa&index=2
+
+- 環境構築ターミナルコマンド
+  $ cd /Applications/MAMP/htdocs/
+  $ curl -sS https://getcomposer.org/installer​ | php
+  $ sudo mv composer.phar /usr/local/bin/composer
+  $ composer -V
+  ※composer 入ってるなら下記からスタート※
+  $ composer create-project laravel/laravel --prefer-dist blog
+  $ cd blog/
+  $ chmod -R 777 storage
+  $ chmod -R 777 bootstrap/cache
+
+- トップページ
+  http://localhost/Laravel/blog/public/
+
+- DB 接続
+  　.env を編集する。
+  socket 情報も入力しておく(mamp のトップ画面にパスの記載あり)
+
+- 文字化け防止
+  　 app/Providers/AppServiceProvider.php
+
+  一番上に下記を記載
+  use Illuminate\Support\Facades\Schema;
+
+  一番下に下記を記載
+  public function boot()
+  {
+  //
+  Schema::defaultStringLength(191);
+  }
+
+- ローケーション
+  config/app.php
+
+  'timezone' => 'Asia/Tokyo',
+
+  'locale' => 'ja',
