@@ -48,3 +48,11 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
   'timezone' => 'Asia/Tokyo',
 
   'locale' => 'ja',
+
+- マイグレーションコマンド
+
+  テーブル生成
+  php artisan make:migration create_blogs_table
+
+  マイグレーション実行
+  php artisan migrate
