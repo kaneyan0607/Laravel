@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
   $ composer -V
   ※composer 入ってるなら下記からスタート※
   $ composer create-project laravel/laravel --prefer-dist blog
+  ※5 系なら右記にする　 composer create-project laravel/laravel=5.8.x --prefer-dist blog
   $ cd blog/
   $ chmod -R 777 storage
   $ chmod -R 777 bootstrap/cache
