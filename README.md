@@ -59,3 +59,6 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
 
   コントローラー作成
   php artisan make:controller BlogController
+
+- エラーメッセージ日本語化
+  https://readouble.com/laravel/5.6/ja/validation-php.html
