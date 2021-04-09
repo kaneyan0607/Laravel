@@ -114,9 +114,10 @@ class BlogController extends Controller
                 'content' => $inputs['content'],
             ]);
 
-            $blog->seve();
+            $blog->save();
             \DB::commit();
         } catch (\Throwable $e) {
+
             \DB::rollback();
             abort(500);
         }
