@@ -62,3 +62,7 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
 
 - エラーメッセージ日本語化
   https://readouble.com/laravel/5.6/ja/validation-php.html
+
+- laravelバージョン確認コマンド（使用バージョン:Laravel Framework 5.8.38)
+　php artisan --version
+　
