@@ -66,3 +66,26 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
 - laravelバージョン確認コマンド（使用バージョン:Laravel Framework 5.8.38)
 　php artisan --version
 　
+
+※アクセスするルートでpublicを消すには下記.htaccessファイルをララベルを扱うディレクトリ直下に配置
+https://gfonius.net/blog/laravel-url-public/
+https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
+<!-- <IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews
+    </IfModule>
+    
+    RewriteEngine On
+    
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ ^$1 [N]
+
+    RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+    RewriteRule ^(.*)$ public/$1 
+
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ server.php
+
+</IfModule> -->
