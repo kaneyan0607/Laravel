@@ -102,3 +102,13 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
 
   modelで下記を指定する
   public $timestamps = false;
+
+- Laravelバリデーションの日本語化
+  https://readouble.com/laravel/5.8/ja/validation-php.html
+
+  ターミナルで下記を実行
+
+  php -r "copy('https://readouble.com/laravel/5.8/ja/install-ja-lang-files.php', 'install-ja-lang.php');"
+  php -f install-ja-lang.php
+  php -r "unlink('install-ja-lang.php');"
+ 
