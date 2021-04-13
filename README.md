@@ -89,3 +89,10 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
     RewriteRule ^ server.php
 
 </IfModule> -->
+
+- LaravelでMySQLへのデータ挿入時にエラーが出た場合の対処法
+
+doesn't have a default value
+
+config/database.phpのstrictの値をfalseに設定する。
+https://qiita.com/tewi_r/items/58af980c258a484cec65
