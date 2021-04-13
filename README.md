@@ -63,26 +63,26 @@ https://www.youtube.com/watch?v=yaitzPzBzuI&list=PLCyDm9NTxdhLnA4tH5ToQR1K1LcWIA
 - エラーメッセージ日本語化
   https://readouble.com/laravel/5.6/ja/validation-php.html
 
-- laravelバージョン確認コマンド（使用バージョン:Laravel Framework 5.8.38)
-　php artisan --version
-　
+- laravel バージョン確認コマンド（使用バージョン:Laravel Framework 5.8.38)
+  　 php artisan --version
 
-※アクセスするルートでpublicを消すには下記.htaccessファイルをララベルを扱うディレクトリ直下に配置
+※アクセスするルートで public を消すには下記.htaccess ファイルをララベルを扱うディレクトリ直下に配置
 https://gfonius.net/blog/laravel-url-public/
 https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
+
 <!-- <IfModule mod_rewrite.c>
     <IfModule mod_negotiation.c>
         Options -MultiViews
     </IfModule>
-    
+
     RewriteEngine On
-    
+
     RewriteCond %{REQUEST_FILENAME} -d [OR]
     RewriteCond %{REQUEST_FILENAME} -f
     RewriteRule ^ ^$1 [N]
 
     RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
-    RewriteRule ^(.*)$ public/$1 
+    RewriteRule ^(.*)$ public/$1
 
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -90,20 +90,20 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
 
 </IfModule> -->
 
-- LaravelでMySQLへのデータ挿入時にエラーが出た場合の対処法
+- Laravel で MySQL へのデータ挿入時にエラーが出た場合の対処法
 
   doesn't have a default value
 
-  config/database.phpのstrictの値をfalseに設定する。
+  config/database.php の strict の値を false に設定する。
   https://qiita.com/tewi_r/items/58af980c258a484cec65
 
-- updated_atカラムがないテーブルをEloquentモデルを用いて更新するとき
+- updated_at カラムがないテーブルを Eloquent モデルを用いて更新するとき
   https://qiita.com/msht0511/items/744013d528bca7322d24
 
-  modelで下記を指定する
+  model で下記を指定する
   public $timestamps = false;
 
-- Laravelバリデーションの日本語化
+- Laravel バリデーションの日本語化
   https://readouble.com/laravel/5.8/ja/validation-php.html
 
   ターミナルで下記を実行
@@ -111,4 +111,10 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
   php -r "copy('https://readouble.com/laravel/5.8/ja/install-ja-lang-files.php', 'install-ja-lang.php');"
   php -f install-ja-lang.php
   php -r "unlink('install-ja-lang.php');"
- 
+
+- 保存した画像を表示
+  　https://note.com/koushikagawa/n/n74380a1f3643
+
+  「storage/app」にアクセスするために、シンボリックリンクを貼ります。
+  php artisan storage:link
+  表示する時のパスは stroage/指定したディレクトリ名/
