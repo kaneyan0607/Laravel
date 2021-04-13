@@ -92,7 +92,13 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
 
 - LaravelでMySQLへのデータ挿入時にエラーが出た場合の対処法
 
-doesn't have a default value
+  doesn't have a default value
 
-config/database.phpのstrictの値をfalseに設定する。
-https://qiita.com/tewi_r/items/58af980c258a484cec65
+  config/database.phpのstrictの値をfalseに設定する。
+  https://qiita.com/tewi_r/items/58af980c258a484cec65
+
+- updated_atカラムがないテーブルをEloquentモデルを用いて更新するとき
+  https://qiita.com/msht0511/items/744013d528bca7322d24
+
+  modelで下記を指定する
+  public $timestamps = false;
