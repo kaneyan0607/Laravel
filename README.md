@@ -124,3 +124,9 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
   https://www.youtube.com/watch?v=FPBO4xIil38&t=309s
   下記コマンドを実行
   composer require intervention/image
+
+  https://qiita.com/kuzira_vimmer/items/54d9bfd88f66208c1709
+
+- メール送信　
+  https://reffect.co.jp/laravel/laravel-send-email
+  https://www.youtube.com/watch?v=uFEcsmIArQA&list=PLkQpCfbvj0lxihMoVzymCl-JcJbVsE0fA&index=25
