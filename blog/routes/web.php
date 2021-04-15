@@ -36,3 +36,10 @@ Route::post('/blog/update', 'BlogController@exeUpdate')->name('update');
 
 //ブログ削除
 Route::post('/blog/delete/{id}', 'BlogController@exeDelete')->name('delete');
+
+//画像アップロード&リサイズ
+Route::post('blog/resize_image', 'BlogController@resize_image')->name('resize');
+
+Route::get('resize', 'ResizeController@index');
+
+Route::post('resize/resize_image', 'ResizeController@resize_image');

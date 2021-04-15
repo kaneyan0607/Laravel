@@ -118,3 +118,9 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
   「storage/app」にアクセスするために、シンボリックリンクを貼ります。
   php artisan storage:link
   表示する時のパスは stroage/指定したディレクトリ名/
+
+- 画像アップロード、リサイズライブラリ
+
+  https://www.youtube.com/watch?v=FPBO4xIil38&t=309s
+  下記コマンドを実行
+  composer require intervention/image
