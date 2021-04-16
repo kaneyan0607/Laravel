@@ -130,3 +130,10 @@ https://gist.github.com/liaotzukai/8e61a3f6dd82c267e05270b505eb6d5a
 - メール送信　
   https://reffect.co.jp/laravel/laravel-send-email
   https://www.youtube.com/watch?v=uFEcsmIArQA&list=PLkQpCfbvj0lxihMoVzymCl-JcJbVsE0fA&index=25
+
+- エラーログの出し方
+
+  https://techacademy.jp/magazine/18779
+  http://kayakuguri.github.io/blog/2017/06/16/larave-std-error/
+
+  \Log::error('TEST LOG');
