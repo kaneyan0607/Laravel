@@ -13,7 +13,7 @@
             @foreach($blogs as $blog)
             <tr>
                 <td>{{ $blog->id }}</td>
-                <td><a href="/blog/{{ $blog->id }}">{{ $blog->title }}</a></td>
+                <td><a href="blog/{{ $blog->id }}">{{ $blog->title }}</a></td>
                 <td>{{ $blog->updated_at }}</td>
             </tr>
             @endforeach
