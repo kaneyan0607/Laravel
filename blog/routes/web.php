@@ -18,7 +18,7 @@ Route::get('/', 'BlogController@showList')->name('blogs');
 Route::get('/blog/create', 'BlogController@showCreate')->name('create');
 
 //ブログ登録画面
-Route::get('/blog/store', 'BlogController@exeStore')->name('store');
+Route::post('/blog/store', 'BlogController@exeStore')->name('store');
 
 //ブログ詳細画面を表示
 Route::get('/blog/{id}', 'BlogController@showDetail')->name('show');

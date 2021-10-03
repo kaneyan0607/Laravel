@@ -13,7 +13,7 @@ class BlogRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -25,6 +25,8 @@ class BlogRequest extends FormRequest
     {
         return [
             //
+            'title' => 'required | max:100',
+            'content' => 'required'
         ];
     }
 }
